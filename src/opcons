@@ -1,0 +1,10 @@
+prog
+	var x;
+	var cond;
+	var i;
+	var y;
+	x := 1;
+	x := 2 + y;
+	output y;
+	output x;
+endprog
