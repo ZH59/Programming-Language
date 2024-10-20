@@ -1,9 +1,9 @@
-**Project µ**
+## Project µ
 
 In this project, I built a parser, compiler and interpreter for an imperative language μ with Java ANTLR. I also implemented automatic program code optimization, such as removing unreachable code, constant propagation, and eliminating dead code.
 
-**task 1 - build parser and semantic checker**
-## To run task 1, type:
+## task 1 - build parser and semantic checker
+To run task 1, type:
 java Main tests/task1/[testfile]
 
 where [testfile] is one of the following:
@@ -17,8 +17,8 @@ where [testfile] is one of the following:
 For example:
 java Main task1/test_double_jump
 
-**task 2 - write an interpreter for mu**
-## To run task 2, type:
+## task 2 - write an interpreter for mu**
+To run task 2, type:
 java Main tests/task2/[testfile] --interpreter
 
 where [testfile] is one of the following:
@@ -38,8 +38,8 @@ of x and a, which are asked for input in the beginning
 For example:
 java Main task2/test_simple
 
-**task 3 - build the control flow graph**
-## To run task 3, type:
+## task 3 - build the control flow graph
+To run task 3, type:
 java Main tests/task3/[testfile] tests/task3/[output_graph_file]
 This will take the given mu program and produce a corresponding dotty file, which can be transformed into a pdf file like
 the one shown on the assignment spec.
@@ -50,8 +50,8 @@ java Main tests/task3/test_complex1 tests/task3/my_graph_complex1
 cd tests/task3
 dot -Tpdf my_graph_complex > output_graph.pdf
 
-**task 4 - unreachable code**
-## To run task 4, type:
+## task 4 - unreachable code
+To run task 4, type:
 java Main tests/task4/[testfile] tests/task4/[output_graph_file] tests/task4/[output_reachable_mu] --unreachable
 This will take the given mu program, produce a corresponding dotty file, and regenerate an optimised mu program after
 all unreachable basic blocks are removed.
@@ -66,8 +66,8 @@ all unreachable basic blocks are removed.
 For example:
 java Main tests/task4/test_lec tests/task4/dotty_lec tests/task4/reachable_lec --unreachable
 
-**task 5 - constant propagation and constant folding**
-## To run task 5, type:
+## task 5 - constant propagation and constant folding
+To run task 5, type:
 java Main tests/task5/[testfile] tests/task5/[output_graph_file] tests/task5/[output_progapated_mu] --constants
 This will take the given mu program, produce a corresponding dotty file, and regenerate an optimised mu program after
 all constant assignment statements are propagated throughout the program and substituted for the variable.
@@ -82,8 +82,8 @@ all constant assignment statements are propagated throughout the program and sub
 For example:
 java Main tests/task5/test_simple tests/task5/my_graph_simple tests/task5/my_propa_simple --constants
 
-**task 6 - deadcode elimination**
-## To run task 6, type:
+## task 6 - deadcode elimination
+To run task 6, type:
 java Main tests/task6/[testfile] tests/task6/[output_dotty] tests/task6/[output_live_mu] --deadcode
 
 [testfile] is one of the following:
@@ -92,7 +92,7 @@ java Main tests/task6/[testfile] tests/task6/[output_dotty] tests/task6/[output_
 *test_unreachable*: a, b and i are not used in an unreachable block so their assignments are removed
 *test_complex1* and *test_complex2*: x and 
 
-**task 7 - phase ordering**
+## task 7 - phase ordering
 A good sequence of optimisation would be:
 *--unreachable* -> *--constants* -> *--deadcode* -> *--unreachable* -> *--constants* -> *--deadcode* -> *...*
 We first eliminate the unreachable blocks in the program since if a block is unreachable from the start then there
