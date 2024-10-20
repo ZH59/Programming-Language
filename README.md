@@ -1,3 +1,5 @@
+**Project µ**
+
 I built parser, compiler and intepretor for a simple imperative language µ.
 In the language µ, we have single integer variables only. There is no structured control-flow: µ only has goto and conditional-goto statements.
 We also did automatic program code optimisation such as unreachable code removal, constant propagation, and deadcode eliminsation.
