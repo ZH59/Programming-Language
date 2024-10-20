@@ -100,8 +100,7 @@ is no need to propagate and eliminate constant assignments on that block. Then w
 through the program since deadcode elimination requires checking if the computation is used at a later point when
 executing. Then we do deadcode elimination to delete all unused assignments.
 
-
-## To run task 7, type:
+To run task 7, type:
 java Main tests/task7/[testfile] tests/task7/[output_dotty] tests/task6/[output_optimised_mu] *--unreachable --constants --deadcode ...*
 *test_unreach_propa*: the block with label unknown can be removed and the value of x can be propagated
 *test_unreach_dead*: the block with label unknown can be removed and the assignment of a can be eliminated
