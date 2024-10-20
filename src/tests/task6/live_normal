@@ -1,0 +1,21 @@
+prog
+	var x;
+	var a;
+	var b;
+	var y;
+	var c;
+	a := 2 + 3;
+	b := 2;
+	goto lhead;
+lhead:
+	c := b * 2;
+	if (c > 4) goto ltail;
+	c := c + 2;
+	goto lhead;
+ltail:
+	output a;
+	goto lexit;
+lexit:
+	output a;
+	output c;
+endprog

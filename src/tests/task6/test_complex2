@@ -1,0 +1,31 @@
+prog
+var x; // declare variable x
+var i;
+var a;
+var b;
+var p;
+x := 1;
+i := 0;
+goto dowork;
+
+dowork:
+if (x > 4) goto lexit;
+x := x * 3;
+goto dowork;
+
+lhead:
+if (i > 3) goto lexit;
+i := i + 1;
+goto lhead;
+
+lsmall:
+a := 2;
+p := 1;
+if (p > a) goto lexit;
+p := p + 2;
+output p;
+goto lsmall;
+
+lexit:
+output x;
+endprog

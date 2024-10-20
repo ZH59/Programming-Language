@@ -1,0 +1,24 @@
+prog
+	var x;
+	var i;
+	var a;
+	var b;
+	var p;
+	x := 1;
+	goto dowork;
+dowork:
+	if (x > 4) goto lexit;
+	goto dowork;
+lhead:
+	if (i > 3) goto lexit;
+	goto lhead;
+lsmall:
+	a := 2;
+	p := 1;
+	if (p > a) goto lexit;
+	p := p + 2;
+	output p;
+	goto lsmall;
+lexit:
+	output x;
+endprog

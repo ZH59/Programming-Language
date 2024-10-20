@@ -1,0 +1,12 @@
+prog
+
+var x;
+x := 1;
+
+label:
+x := x + 1;
+if (x) goto label;
+
+output x;
+
+endprog

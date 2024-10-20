@@ -1,0 +1,30 @@
+prog
+var x;
+var cond1;
+var cond2;
+var i;
+var a;
+input x; // read value from standard input
+input a;
+i := 1; // assign constant values
+goto lhead;
+
+lhead: // this is a label
+cond1 := i > 100; // evaluate condition
+if (cond1) goto lmid; // jump if condition holds, i.e. cond1 != 0
+x := 2 * x;
+i := i * x;
+output i;
+goto lhead; // jump to label lhead
+
+lmid:
+cond2 := i > 10000;
+if (cond2) goto lexit;
+a := a + 1;
+i := i * a;
+output i;
+goto lmid;
+
+lexit:
+output i; // print variable x on standard output
+endprog

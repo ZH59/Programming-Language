@@ -1,0 +1,22 @@
+prog
+	var x;
+	var i;
+	var a;
+	var b;
+	var q;
+	x := 1;
+	goto dowork;
+dowork:
+	if (x > 4) goto lexit;
+	goto dowork;
+lunknown:
+	if (i < x) goto lexit;
+	goto lunknown;
+lbig:
+	if (i < x) goto lexit;
+	q := 2;
+	output q;
+	goto lunknown;
+lexit:
+	output x;
+endprog

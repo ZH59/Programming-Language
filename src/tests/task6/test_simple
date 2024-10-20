@@ -1,0 +1,12 @@
+prog
+var x;
+var a;
+var b;
+var c;
+a := 2 + 3;
+b := 2;
+c := (a + b) * a;
+x := 2;
+output a;
+output c;
+endprog

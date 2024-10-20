@@ -1,0 +1,11 @@
+prog
+var x; // declare variable x
+var cond; // declare variable cond
+var i;
+var y;
+//input y; // read value from standard input
+x := 1;
+x := 2 + y;
+output y;
+output x;
+endprog

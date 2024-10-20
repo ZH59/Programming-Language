@@ -1,0 +1,14 @@
+prog
+var x; // declare variable x
+var cond; // declare variable cond
+var i;
+var i;
+input x; // read value from standard input
+
+i := 1; // assign constant values
+x := 1;
+
+
+lexit:
+output x; // print variable x on standard output
+endprog

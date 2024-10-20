@@ -1,0 +1,21 @@
+prog
+var x; // declare variable x
+var cond; // declare variable cond
+var i;
+
+i := 1; // assign constant values
+x := 1;
+
+lhead: // this is a label
+cond := i > 100; // evaluate condition
+if (cond) goto lexit; // jump if condition holds, i.e. cond != 0
+i := i + 1;
+x := 2 * x;
+output x;
+goto lhead; // jump to label lhead
+
+i := 10;
+
+lexit:
+output x; // print variable x on standard output
+endprog

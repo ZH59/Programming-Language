@@ -1,0 +1,17 @@
+prog
+	var x;
+	var cond;
+	var i;
+	input x;
+	i := 1;
+	goto lhead;
+lhead:
+	cond := i > 100;
+	if (cond) goto lexit;
+	x := 2 * x;
+	i := i + x;
+	output x;
+	goto lhead;
+lexit:
+	output x;
+endprog

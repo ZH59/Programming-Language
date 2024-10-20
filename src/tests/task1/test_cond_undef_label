@@ -1,0 +1,15 @@
+prog
+var x; // declare variable x
+var cond; // declare variable cond
+var i;
+i := 2;
+if (wrong_cond) goto label;
+
+label:
+i := 1; // assign constant values
+x := 1;
+if (right_cond) goto lexit;
+
+lexit:
+output x; // print variable x on standard output
+endprog

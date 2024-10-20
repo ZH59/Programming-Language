@@ -1,0 +1,23 @@
+prog
+	var x;
+	var cond;
+	var i;
+	var z;
+	i := 1;
+	x := 1;
+	z := 10;
+	goto new;
+new:
+	x := 2;
+	z := 11;
+lhead:
+	cond := 0;
+	if (cond) goto lexit;
+	x := 1;
+	input z;
+	i := 2;
+	x := 4;
+	output 2;
+lexit:
+	output x;
+endprog

@@ -1,0 +1,30 @@
+prog
+	var x;
+	var cond1;
+	var cond2;
+	var i;
+	var a;
+	input x;
+	input a;
+	i := 1;
+	goto lhead;
+lhead:
+	cond1 := 0;
+	if (cond1) goto lmid;
+	x := 2 * x;
+	i := 1 * x;
+	output 1;
+	goto ltail;
+lmid:
+	cond2 := 0;
+	if (cond2) goto lexit;
+	a := a + 1;
+	i := 1 * a;
+	output 1;
+	goto ltail;
+ltail:
+	output x;
+	goto lexit;
+lexit:
+	output i;
+endprog

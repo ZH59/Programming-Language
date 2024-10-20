@@ -1,0 +1,31 @@
+prog
+var x;
+var b;
+var a;
+var r;
+x := 1;
+r := 1;
+a := 1;
+b := 1;
+goto lzero;
+
+lzero:
+b := x > 1;
+goto lthree;
+
+lone:
+b := x > 1;
+goto ltwo;
+
+ltwo:
+a := x - 1;
+r := x * r;
+if (b) goto lone;
+goto lexit;
+
+lthree:
+if (b) goto lzero;
+goto lexit;
+
+lexit:
+endprog

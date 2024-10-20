@@ -1,0 +1,9 @@
+prog
+var x;
+var y;
+
+x := 1;
+y := 2;
+
+output x + y * 10;
+endprog

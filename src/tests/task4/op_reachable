@@ -1,0 +1,16 @@
+prog
+	var x;
+	var i;
+	x := 1;
+	goto dowork;
+dowork:
+	if (x > 4) goto label;
+	x := x * 3;
+	goto dowork;
+label:
+	output x;
+	goto lexit;
+lexit:
+	i := 2 * x;
+	output i;
+endprog

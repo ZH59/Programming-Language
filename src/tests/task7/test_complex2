@@ -1,0 +1,36 @@
+prog
+var x;
+var cond;
+var i;
+var z;
+i := 1;
+x := 1;
+z := 10;
+z := i + x;
+goto new;
+
+new:
+x := 2;
+z := z + 1;
+i := x + z + 1;
+output x;
+goto lhead;
+
+lhead:
+cond := i > 100;
+if (cond) goto lexit;
+i := i + 20;
+output x;
+goto lhead;
+
+random:
+x := i;
+input z;
+i := i + 1;
+x := 2 * x;
+output x;
+goto lexit;
+
+lexit:
+output x; // print variable x on standard output
+endprog

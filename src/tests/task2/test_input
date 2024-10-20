@@ -1,0 +1,9 @@
+prog
+var x; // declare variable x
+var i;
+input x;
+input i;
+x:=x+i;
+output x;
+output i;
+endprog
