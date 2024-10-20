@@ -17,7 +17,7 @@ where [testfile] is one of the following:
 For example:
 java Main task1/test_double_jump
 
-## task 2 - write an interpreter for mu**
+## task 2 - write an interpreter for µ
 To run task 2, type:
 java Main tests/task2/[testfile] --interpreter
 
