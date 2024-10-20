@@ -1,7 +1,6 @@
 **Project µ**
 
-In this project, I built a parser, compiler and interpreter for a simple imperative language µ. In the language µ, I have single integer variables only. There is no structured control flow: µ only has goto and conditional-goto statements. I also did automatic program code optimization such as unreachable code removal, constant propagation, and deadcode elimination.
-
+In this project, I built a parser, compiler and interpreter for an imperative language μ with Java ANTLR. I also implemented automatic program code optimization, such as removing unreachable code, constant propagation, and eliminating dead code.
 
 **task 1 - build parser and semantic checker**
 ## To run task 1, type:
